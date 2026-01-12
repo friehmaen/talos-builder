@@ -113,7 +113,9 @@ installer:
 			--base-installer-image="$(REGISTRY)/$(REGISTRY_USERNAME)/installer:$(TALOS_TAG)" \
 			--overlay-name="rpi5" \
 			--overlay-image="$(REGISTRY)/$(REGISTRY_USERNAME)/sbc-raspberrypi5:$(SBCOVERLAY_TAG)" \
-			--system-extension-image="$(EXTENSIONS)"
+			--system-extension-image="$(EXTENSIONS)" \
+			--system-extension-image "ghcr.io/siderolabs/iscsi-tools:v0.2.0" \
+			--system-extension-image "ghcr.io/siderolabs/util-linux-tools:2.41.2"
 
 
 
