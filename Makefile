@@ -127,6 +127,7 @@ installer:
 			--system-extension-image="$(EXTENSIONS)" \
 			--system-extension-image "ghcr.io/siderolabs/iscsi-tools:v0.2.0" \
 			--system-extension-image "ghcr.io/siderolabs/util-linux-tools:2.41.2" \
+			--extra-kernel-arg "-console" \
 			$(EXTENSION_ARGS)
 
 
